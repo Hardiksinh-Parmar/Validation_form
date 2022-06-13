@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../css/form.css">
+    <div class="content"></div>
+    <script src="../js/form.js"></script>
+    <h1> Customers Details:</h1>
+    <form name="form" onsubmit="return validateForm()" method="post">
+      <hr><br>
+          <!--input type="submit" value="Submit"-->
+      
+        <div class="row">
+          <div class="col-sm">
+            <h2>Full name<span style="color: red ;">*</span></h2>
+              <input class = form-control type="text1" id="fname" name="fname" value="" placeholder="Firstname"><br>
+               <!-- <label for="fname" >First name</label> -->
+               <p id="OP1"></p>
+
+          </div>
+            <!-- <div class="col-sm-2"></div> -->
+            <div class="col-sm">
+            <input class = form-control type="text2" id="lname" name="lname" value="" placeholder="lastname"><br>
+              <!-- <lable for="lname">Last name</lable> -->
+              <p id="OP2"></p>
+            </div>
+            <div class="col-sm-2"></div>
+      </div>
+      
+      
+
+
+
+
+
+      <div>
+      <h2>Address <span style="color: red ;">*</span></h2>
+      <input type="text3" id="Address1" name="Address1">
+      <p id="OP3"></p><br>
+      <label for="Address1">Street Address</Address></label><br><br>
+      <input type="text4" id="Address2" name="Address2">
+      <p id="OP4"></p><br>
+      <label for="Address2">Street Address line2</Address></label><br><br>
+      <input type="text5" id="city" name="city">
+      <p id="OP5"></p>
+      <label for="city" style="float: left; padding-right: 490px;">city</label>
+      
+      <input type="text6" id="state" name="state">
+      <p id="OP6"></p><br>
+      <label for="state">State/province</Address></label>
+      <br><br><br>
+      <input type="number1" id="Postal" name="Postal">
+      <p id="OP7"></p>
+      <label for="Postal">Postal/zip code</Address></label><br><br>
+      </div>
+      
+      <h2>Phone Number <span style="color: red ;">*</span></h2>
+      <input type="number2"id="phonenumber"name="phone number" placeholder="(000)000-0000">
+      <p id="OP13"></p><br>
+      <label for="phonenumber"></label>
+      <h2>E-mail</h2>
+      <input type="email"id="email"name="email" placeholder="ex: email@yahoo.com">
+      <p id="OP8"></p>
+      <label for="email"></label><br>
+      <label for="email">email@yahoo.com</email></label><br>
+      <h2>How do you hear about us?<span style="color: red ;">*</span> </h2>
+      <select>
+          <option value="magazine">magazine</option>
+          <option value="friends">friends</option>
+          <option value="newspaper">newspaper</option>
+          <option value="television">television</option>
+      </select>
+      <div>
+      <h2>Feedback about us:</h2>
+      <textarea type="text7" name="Feedback" id="Feedback" cols="125" rows="10" ></textarea>
+      <p id="OP9"></p>
+        </div><br>
+      <!--input type="text"id="Feedback"name="Feedback" size="100"style="padding: 5%"-->
+      <br>
+      <h2>Suggestions if for further improvement:</h2>
+      <textarea type="text8" name="Suggestions" id="suggesions" cols="125" rows="10" ></textarea>
+      <p id="OP10"></p><br><br>
+      <!--input type="text"id="Suggestions"name="Suggestions" size="100"style="padding: 5%"-->
+      <form>
+        
+        <label for="vehicle1"><b> Will you be willing to recommend us?</b></label>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <p id="OP11"></p><br></form>
+        
+      <form>
+        
+        <label >Gender:</label>
+        <input type="radio" id="gender" name="fav_language" value="">
+        <label for="male">male</label>
+        <input type="radio" id="gender" name="fav_language" value="">
+        <label for="female">female</label>
+        <input type="radio" id="gender" name="fav_language" value="">
+        <label for="others">others</label>
+        <p id="OP12"></p>
+      </form>
+      <h2>Please give reference of any people whom :</h2>
+      <table style="width: 90%";>
+        <tr>
+          <th style="border-top-color: white;border-left-color: white;"></th>
+          <th>Full name</th>
+          <th>Address</th>
+          <th>contact number</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>  </th>
+            <th>   </th>
+            <th>   </th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>   </th>
+            <th>   </th>
+            <th>   </th>
+        </tr>
+      </table><br><br>
+      <!--input type="submit" value="Submit"color="green"-->
+      <input type="submit" class="button" id="button" name="button" onclick="validateForm()"></input>
+    </form>
+  </head>
+</html>
+
